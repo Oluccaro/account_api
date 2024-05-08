@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  account:
+    image: 'account-ms:latest'
+    build:
+      context: .
+    container_name: account-container
+    ports:
+      - '3000:3000'
+          
