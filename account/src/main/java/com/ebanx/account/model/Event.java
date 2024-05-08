@@ -25,7 +25,7 @@ public class Event {
   private String type;
   private Double amount;
   @Column(name = "account_origin")
-  private Long origin;
+  private String origin;
   @Column(name = "account_destination")
-  private Long destination;
+  private String destination;
 }

@@ -18,7 +18,15 @@ import lombok.Setter;
 public class Account {
   @Id
   @Column(name="account_id")
-  private Long id;
+  private String id;
   @Column(name="balance")
   private Double balance;
+
+  public void deposit(Double value){
+    this.balance += value;
+  }
+
+  public void withdraw(Double value){
+    this.balance -= value;
+  }
 }

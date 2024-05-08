@@ -1,2 +1,8 @@
 ## vscode 
 .vscode
+
+## jarfiles
+*.jar
+
+account/data
+data/*

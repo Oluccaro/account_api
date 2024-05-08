@@ -16,7 +16,7 @@ public class AccountController {
   private AccountService accountService;
 
   @GetMapping("/balance")
-  public ResponseEntity<Double> getBalance(@RequestParam("account_id") Long accountId) {
+  public ResponseEntity<Double> getBalance(@RequestParam("account_id") String accountId) {
       AccountDTO account =  accountService.getAccount(accountId);
       if (account == null) return new ResponseEntity<Double>((double) 0, HttpStatusCode.valueOf(404));
       return new ResponseEntity<Double>(account.getBalance(), HttpStatusCode.valueOf(200));

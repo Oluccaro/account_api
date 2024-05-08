@@ -12,6 +12,6 @@ import lombok.Setter;
 public class EventRequest {
   private String type;
   private Double amount;
-  private Long origin;
-  private Long destination;
+  private String origin;
+  private String destination;
 }
