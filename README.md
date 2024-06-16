@@ -1,6 +1,6 @@
 # account_api
 
-This application is build for a take home test for Ebanx!
+This application is build for a take home test for the recruitment process of a company!
 
 It is build in java with Spring Boot with JPA. It stores data on a temporary H2 data base. It also runs on Docker 
 
